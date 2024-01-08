@@ -11,13 +11,13 @@ loginForm.addEventListener("submit", (event) => {
    const password = document.querySelector('input[name="password"]');
 
    if(email.value === '' || password.value === ''){
-            alert("Toate campurile trebuie  completate!");
+            alert("Toate campurile trebuie completate!");
    }else{
       const formData = {
            email : email.value,
            password : password.value,
       };
       console.log(formData);
-      formData.reset();
+      loginForm.reset();
    }
 });

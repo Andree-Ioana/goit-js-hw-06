@@ -7,7 +7,7 @@ validationInput.addEventListener("blur", () => {
     //aflu nr de caractere din data-length
     const nrLength = validationInput.getAttribute("data-length");
     //verific nr de caractere
-    if(validationInput.value.length === nrLength){
+    if(validationInput.value.length === parseInt(nrLength, 10)){
         validationInput.classList.add("valid");
         validationInput.classList.remove('invalid');
     }else{
